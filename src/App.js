@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './index.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div  className='whole_div'>
+        <div className='logo'>
+          <img src='./images/icon1.png' />
+        </div>
+
+        <div className='nav'>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Porfolio</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+
+       
+      </div>
+      </div>
+<div className='intro'>
+  <p style={{color: "gray"}}>WELCOME TO MY WORLD</p>
+  <h2>Hi, I'm Amrit Pandey</h2>
+  <h2 style={{color: "#E94B3CFF"}}>Front End Developer</h2>
+  <h2>based in Nepal</h2>
+</div>
+    </>
+  )
 }
 
-export default App;
+export default App; 
